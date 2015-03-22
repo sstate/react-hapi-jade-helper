@@ -1,6 +1,6 @@
 {
   "name": "react-hapi-jade-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "license": "MIT",
   "main": "src/index.js",
@@ -35,8 +35,8 @@
       "js"
     ]
   },
-  "peerDependencies": {
-    "react": "0.12.x"
+  "dependencies": {
+    "react": "^0.12.2",
   },
   "devDependencies": {
     "babel-core": "^4.0.0",
