@@ -1,11 +1,11 @@
 {
   "name": "react-hapi-jade-helper",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "main": "src/index.js",
-  "repository": "",
-  "author": "",
+  "repository": "git@github.com:sstate/react-hapi-jade-helper.git",
+  "author": "rtorr",
   "engines": {
     "node": ">=0.10.0"
   },
