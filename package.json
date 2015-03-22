@@ -1,0 +1,52 @@
+{
+  "name": "react-hapi-jade-helper",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": "",
+  "author": "",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "examples": "watchify ./examples/app.js -o ./dist/_bundle.js & npm run local_server",
+    "local_server": "echo Open examples on http:localhost:8000/examples && python -m SimpleHTTPServer",
+    "lint": "eslint ./src",
+    "test": "jest"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        "babelify",
+        {
+          "ext": ".js"
+        }
+      ]
+    ]
+  },
+  "jest": {
+    "scriptPreprocessor": "./util/jest_preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ],
+    "testFileExtensions": [
+      "js"
+    ]
+  },
+  "peerDependencies": {
+    "react": "0.12.x"
+  },
+  "devDependencies": {
+    "babel-core": "^4.0.0",
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "eslint": "^0.16.1",
+    "jest-cli": "^0.2.2",
+    "reactify": "^1.0.0",
+    "watchify": "^2.3.0",
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2"
+  }
+}
