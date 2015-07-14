@@ -6,7 +6,7 @@ var ReactHelpers = {
   reactLayoutHandler: function (options) {
     options.reply.view(options.jadeLayout || 'index', {
       layoutData: options.layoutData,
-      reactComponent: React.renderToString(<options.Layout view={options.component} data={options.layoutData} />)
+      reactComponent: React.renderToString(React.createElement(options.Layout, {view: options.component, data: options.layoutData}))
     });
   }
 };
